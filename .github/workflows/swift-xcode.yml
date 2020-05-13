@@ -16,5 +16,5 @@ jobs:
     - name: Xcodebuild Action
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
-        project: ./Tip__Calculator.xcodeproj
+        project: Tip__Calculator.xcodeproj
 
