@@ -17,5 +17,6 @@ jobs:
       run: cd Tip__Calculator
     - name: Build
       run: swift build -v
+      working-directory: ./Tip__Calculator
     - name: Run tests
       run: swift test -v
