@@ -1,0 +1,22 @@
+name: Swift Test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Change Directory
+      run: cd Tip__Calculator
+    - name: Build
+      run: swift build -v
+      working-directory: ./Tip__Calculator
+    - name: Run tests
+      run: swift test -v
